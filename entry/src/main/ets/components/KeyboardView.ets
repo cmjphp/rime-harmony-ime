@@ -45,6 +45,7 @@ export struct KeyboardView {
     .width('100%')
     .height('100%')
     .justifyContent(FlexAlign.End)
+    .padding({ bottom: 28 })
     .backgroundColor('#D1D5DB');
   }
 
