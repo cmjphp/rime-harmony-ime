@@ -13,13 +13,15 @@ export struct CandidateBar {
             .fontSize(14)
             .fontColor('#2563EB')
             .maxLines(1)
+            .textAlign(TextAlign.Start)
             .padding({ left: 12, right: 12 })
+            .width('100%')
         }
         .layoutWeight(1)
         .scrollable(ScrollDirection.Horizontal)
         .scrollBar(BarState.Off)
 
-        Text(this.debugStatus)
+        Text('cmj 输入法')
           .fontSize(10)
           .fontColor('#6B7280')
           .maxLines(1)
