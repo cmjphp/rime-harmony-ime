@@ -464,7 +464,7 @@ export class KeyboardController {
     }
     try {
       const screen = display.getDefaultDisplaySync();
-      const navBarPx = Math.floor(screen.densityDPI / 160 * 28);
+      const navBarPx = Math.floor(screen.densityDPI / 160 * 44);
       const panelHeight = Math.floor(screen.height * KEYBOARD_HEIGHT_RATE);
       const panelInfo: inputMethodEngine.PanelInfo = {
         type: inputMethodEngine.PanelType.SOFT_KEYBOARD,
