@@ -1,0 +1,28 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "RimeHarmonyIME"
+    },
+    {
+      "name": "module_desc",
+      "value": "RimeHarmonyIME entry module"
+    },
+    {
+      "name": "entry_ability_desc",
+      "value": "RimeHarmonyIME settings entry"
+    },
+    {
+      "name": "input_method_desc",
+      "value": "RimeHarmonyIME input method"
+    },
+    {
+      "name": "english",
+      "value": "English"
+    },
+    {
+      "name": "chinese",
+      "value": "Chinese"
+    }
+  ]
+}

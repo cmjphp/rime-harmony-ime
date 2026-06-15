@@ -1,0 +1,10 @@
+{
+  "modelVersion": "6.0.2",
+  "name": "rime-harmony-ime",
+  "version": "0.1.0",
+  "description": "HarmonyOS NEXT input method MVP backed by a Rime-compatible native bridge.",
+  "main": "",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {}
+}

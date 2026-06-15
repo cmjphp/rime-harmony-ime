@@ -1,0 +1,6 @@
+{
+  "src": [
+    "pages/KeyboardPage",
+    "pages/SettingsPage"
+  ]
+}

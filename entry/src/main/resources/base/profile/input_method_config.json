@@ -1,0 +1,18 @@
+{
+  "subtypes": [
+    {
+      "icon": "$media:app_icon",
+      "id": "RimeHarmonyIME_English",
+      "label": "$string:english",
+      "locale": "en-US",
+      "mode": "lower"
+    },
+    {
+      "icon": "$media:app_icon",
+      "id": "RimeHarmonyIME_Chinese",
+      "label": "$string:chinese",
+      "locale": "zh-CN",
+      "mode": "lower"
+    }
+  ]
+}

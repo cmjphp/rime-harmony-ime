@@ -1,0 +1,34 @@
+# DevEco Studio / HarmonyOS
+local.properties
+.cxx/
+build/
+**/build/
+**/.cxx/
+.hvigor/
+
+# Signing configs (contain passwords)
+# If you need signing configs, add them locally after cloning
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+oh_modules/
+
+# Third-party native dependencies and build artifacts
+native/third_party/
+native/rime_bridge/build-*/
+
+# Generated
+*.har
+*.hsp
+*.app
+
+# Logs
+*.log

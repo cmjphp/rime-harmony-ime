@@ -1,0 +1,4 @@
+schema:
+  schema_id: luna_pinyin
+  name: Luna Pinyin MVP
+  version: "0.1"
