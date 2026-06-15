@@ -2,7 +2,7 @@ import { display } from '@kit.ArkUI';
 import { inputMethodEngine, InputMethodExtensionContext } from '@kit.IMEKit';
 import fs from '@ohos.file.fs';
 
-const KEYBOARD_HEIGHT_RATE = 0.42;
+const KEYBOARD_HEIGHT_RATE = 0.3;
 const FALLBACK_ENTER_KEY_TYPE: number = inputMethodEngine.ENTER_KEY_TYPE_NEWLINE;
 const inputMethodAbility: inputMethodEngine.InputMethodAbility = inputMethodEngine.getInputMethodAbility();
 const LUNA_PINYIN_DICT_RAWFILE: string = 'rime/luna_pinyin.dict.yaml';
