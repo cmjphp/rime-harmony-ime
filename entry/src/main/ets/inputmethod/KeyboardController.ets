@@ -464,6 +464,7 @@ export class KeyboardController {
     }
     try {
       const screen = display.getDefaultDisplaySync();
+      const navBarPx = Math.floor(screen.densityDPI / 160 * 28);
       const panelHeight = Math.floor(screen.height * KEYBOARD_HEIGHT_RATE);
       const panelInfo: inputMethodEngine.PanelInfo = {
         type: inputMethodEngine.PanelType.SOFT_KEYBOARD,
@@ -473,8 +474,8 @@ export class KeyboardController {
       inputMethodAbility.createPanel(this.context, panelInfo)
         .then(async (panel: inputMethodEngine.Panel) => {
           this.panel = panel;
-          await panel.resize(screen.width, panelHeight);
-          await panel.moveTo(0, screen.height - panelHeight);
+          await panel.resize(screen.width, panelHeight + navBarPx);
+          await panel.moveTo(0, screen.height - panelHeight - navBarPx);
           await panel.setUiContent('pages/KeyboardPage');
         })
         .catch((err: Error) => {
