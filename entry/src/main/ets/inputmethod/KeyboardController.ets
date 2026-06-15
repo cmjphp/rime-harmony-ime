@@ -55,6 +55,15 @@ engine:
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
   delimiter: " '"
+  algebra:
+    - erase/^xx$/
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqxy])u/$1v/
+    - derive/un$/uen/
+    - derive/ui/uei/
+    - derive/iu/iou/
 
 translator:
   dictionary: luna_pinyin
@@ -125,6 +134,128 @@ use_preset_vocabulary: false
 输入\tshu ru\t800
 输入法\tshu ru fa\t900
 鸿蒙\thong meng\t900
+我们\two men\t1100
+他\tta\t900
+他们\tta men\t1000
+她\tta\t900
+她们\tta men\t950
+它\tta\t800
+不\tbu\t950
+没\tmei\t900
+没有\tmei you\t1000
+人\tren\t900
+会\thui\t880
+就\tjiu\t870
+也\tye\t860
+都\tdou\t850
+有\tyou\t920
+要\tyao\t870
+说\tshuo\t830
+这\tzhe\t900
+这个\tzhe ge\t950
+这里\tzhe li\t850
+那\tna\t760
+那个\tna ge\t850
+那里\tna li\t800
+什么\tshen me\t1000
+怎么\tzen me\t900
+为什么\twei shen me\t850
+可以\tke yi\t950
+因为\tyin wei\t900
+所以\tsuo yi\t880
+但是\tdan shi\t870
+如果\truguo\t830
+已经\tyi jing\t850
+还是\thai shi\t840
+虽然\tsui ran\t780
+知道\tzhi dao\t900
+觉得\tjue de\t850
+希望\txi wang\t830
+应该\tying gai\t840
+需要\txu yao\t830
+可能\tke neng\t870
+现在\txian zai\t900
+今天\tjin tian\t880
+明天\tming tian\t850
+昨天\tzuo tian\t840
+时候\tshi hou\t870
+工作\tgong zuo\t860
+学习\txue xi\t840
+生活\tsheng huo\t850
+朋友\tpeng you\t860
+家\tjia\t880
+大家\tda jia\t900
+老师\tlao shi\t840
+学生\txue sheng\t830
+公司\tgong si\t820
+手机\tshou ji\t870
+电脑\tdian nao\t840
+问题\twen ti\t830
+谢谢\txie xie\t860
+对不起\tdui bu qi\t800
+没关系\tmei guan xi\t780
+再见\tzai jian\t840
+喜欢\txi huan\t870
+开心\tkai xin\t820
+高兴\tgao xing\t810
+快乐\tkuai le\t800
+漂亮\tpiao liang\t780
+吃\tchi\t850
+吃饭\tchi fan\t860
+喝\the\t800
+睡觉\tshui jiao\t830
+走\tzou\t820
+来\tlai\t880
+去\tqu\t870
+看\tkan\t860
+听\tting\t820
+做\tzuo\t850
+想\txiang\t870
+用\tyong\t860
+给\tgei\t830
+让\trang\t810
+从\tcong\t800
+到\tdao\t870
+很\then\t880
+太\ttai\t850
+最\tzui\t840
+比\tbi\t800
+更\tgeng\t820
+一点\tyi dian\t860
+一些\tyi xie\t830
+一下\tyi xia\t850
+一起\tyi qi\t870
+一样\tyi yang\t840
+一个\tyi ge\t950
+两个\tliang ge\t830
+多少\tduo shao\t840
+几\tji\t800
+大\tda\t880
+小\txiao\t860
+多\tduo\t850
+少\tshao\t820
+长\tchang\t800
+高\tgao\t810
+快\tkuai\t830
+慢\tman\t790
+新\txin\t840
+老\tlao\t820
+上\tshang\t870
+下\txia\t860
+左\tzuo\t800
+右\tyou\t800
+前\tqian\t830
+后\thou\t830
+里\tli\t840
+外\twai\t820
+开\tkai\t840
+关\tguan\t820
+开始\tkai shi\t870
+结束\tjie shu\t800
+完成\twan cheng\t790
+准备\tzhun bei\t810
+告诉\tgao su\t830
+帮忙\tbang mang\t800
 `;
 const RIME_USER_YAML: string = `var:
   option:
