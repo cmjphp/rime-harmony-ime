@@ -174,10 +174,14 @@ export class KeyboardController {
 
   deleteBackward(length: number = 1): void {
     if (!this.textInputClient) {
+      console.error('deleteBackward: textInputClient is undefined');
       return;
     }
     try {
-      this.textInputClient.deleteBackwardSync(length);
+      this.textInputClient.deleteForward(length)
+        .catch((err: Error) => {
+          console.error(`deleteForward promise failed: ${JSON.stringify(err)}`);
+        });
     } catch (err) {
       console.error(`deleteBackward failed: ${JSON.stringify(err)}`);
     }
@@ -188,10 +192,15 @@ export class KeyboardController {
       return;
     }
     try {
-      this.textInputClient.deleteBackwardSync(deleteLength);
-      if (text.length > 0) {
-        this.commitText(text);
-      }
+      this.textInputClient.deleteForward(deleteLength)
+        .then(() => {
+          if (text.length > 0) {
+            this.commitText(text);
+          }
+        })
+        .catch((err: Error) => {
+          console.error(`replaceTextBeforeCursor failed: ${JSON.stringify(err)}`);
+        });
     } catch (err) {
       console.error(`replaceTextBeforeCursor failed: ${JSON.stringify(err)}`);
     }
